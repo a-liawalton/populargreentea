@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>The Most Popular Green Tea Flavors</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="https://use.typekit.net/zls8hju.css">
+
+        <style>
+            body {
+                margin: 0;
+                background-color: #c3d89c;
+                box-sizing: border-box;
+            }
+
+            header {
+                background-color: #9ec462;
+                background: url(images/teabag-tile.svg),
+                linear-gradient(#9ec462, rgb(63, 172, 63));
+                /* background-size: 67px; */
+                /* background-repeat: repeat-y; */
+                height: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            h1 {
+                font-family: myriad-pro-semiextended, sans-serif;
+                text-align: center;
+                margin-top: 0;
+                color: white;
+                font-size: 60px;
+                text-shadow: -2px 2px 0 #384421;
+            }
+
+            .head-two {
+                font-weight: 300;
+                color: #384421;
+                text-shadow: -1px 1px 0 white;
+            }
+
+            main {
+                font-family: myriad-pro-semiextended, sans-serif;
+            }
+
+            ol {
+                list-style-type: none;
+                padding-left: 0;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 50% 50%;
+                column-gap: 41px;
+                row-gap: 21px;
+                margin-top: -55px;
+                width: 70%;
+                color: #384421;
+            }
+
+            main ol > li {
+                display: block;
+                margin-bottom: 50px;
+                background-color: #9ec462;
+                border-radius: 25px;
+                position: relative;
+            }
+
+            h2 {
+                background-color: white;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+                padding-top: 14px;
+                padding-bottom: 14px;
+                padding-left: 28px;
+                margin-bottom: 15px;
+                font-size: 40px;
+            }
+
+            ol > li > * {
+                margin-top: 0;
+            }
+
+            ol li ul > li {
+                font-size: 20px;
+            }
+
+            .tea-desc {
+                list-style-type: none;
+                padding: 15px 28px;
+                margin-top: 20px;
+                position: relative;
+                /* font-size: 24px; */
+            }
+
+            .tea-desc li {
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .tea-desc h3 {
+                display: inline-block;
+                background-color: #384421;
+                color: #c3d89c;
+                padding: 8px 4px;
+                text-transform: uppercase;
+                border-radius: 5px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+
+            .line-break {
+                display: inline;
+            }
+
+            .tea-desc h3:first-child {
+                margin-top: 15px;
+            }
+
+            .essence {
+                margin-top: 0;
+            }
+
+            .counter {
+                width: 65px;
+                height: 75px;
+                background-color: #5c7835;
+                border-radius: 15px;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 50px;
+                font-weight: bold;
+                position: absolute;
+                bottom: -20px;
+                right: -20px;
+                border: 5px solid white;
+                box-shadow: 0 2px 1px #5c7835;
+            }
+
+            /* .box {
+                background-color: transparent;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                border-radius: 25px;
+                left: 5px;
+                top: 5px;
+                z-index: -1;
+                border: 2px solid white;
+            } */
+
+            footer {
+                font-family: myriad-pro-condensed, sans-serif;
+                text-align: center;
+                margin: 26px 35px 35px 35px;
+                padding: 10px 55px;
+                background-color: #9ec462;
+                color: #384421;
+                border: 1px solid #384421;
+                border-radius: 50px;
+            }
+
+            footer a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            footer h4 {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            footer ul, cite {
+                font-style: normal;
+            }
+
+            footer ul {
+                list-style-type: none;
+                padding-left: 0;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            footer ul li {
+                display: inline-block;
+            }
+
+            footer ul li::after {
+                content: ' |';
+            }
+
+            footer ul li:last-child::after {
+                content:none;
+            }
+
+            @media (max-width: 1150px) {
+                ol {
+                    grid-template-columns: auto;
+                    grid-template-rows: repeat(4, auto);
+                    gap: 21px;
+                    max-width: 540px;
+                }
+            }
+
+            @media (max-width: 615px) {
+                ol {
+                    margin-top: -90px;
+                }
+                
+                h1 {
+                    font-size: 50px;
+                }
+
+                h2 {
+                    font-size: 30px;
+                }
+
+                h3 {
+                    font-size: 24px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                h1 {
+                    font-size: 45px;
+                }
+
+                footer {
+                    border-radius: 70px;
+                }
+
+                footer ul li {
+                    display: block;
+                }
+
+                footer ul li::after {
+                    content: none;
+                }
+            }
+
+            @media (max-width: 400px) {
+                header {
+                    height: 200px;
+                }
+                
+                h1 {
+                    font-size: 35px;
+                }
+                
+                ol {
+                    width: 90%;
+                    margin-top: -30px;
+                }
+
+                h2 {
+                    font-size: 23px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                h3 + p {
+                    font-size: 20px;
+                }
+
+                .tea-desc {
+                    padding-top: 0;
+                }
+
+                .counter {
+                width: 46px;
+                height: 53px;
+                border-radius: 10px;
+                font-size: 40px;
+                bottom: -20px;
+                right: 0;
+                border: 3px solid white;
+                box-shadow: 0 1px 1px #5c7835;
+                }
+
+                footer {
+                    border-radius: 0;
+                    border: none;
+                    margin: 0;
+                    padding-bottom: 30px;
+                }
+
+                footer ul li {
+                    display: inline;
+                    padding-right: 2px;
+                }
+
+                footer ul li::after {
+                    content: ', ';
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>The Most Popular<br>
+            <span class="head-two">Green Tea Flavors</span></h1>
+        </header>
+        <main>
+            <ol>
+                <li><div class="counter">1</div>
+                    <div class="box"></div>
+                    <h2>Sencha</h2>
+                    <ul class="tea-desc">
+                        <li>
+                            <h3>Origin</h3>
+                            <p class="line-break">Japan</p>
+                        </li>
+                        <li>
+                            <h3>Form</h3>
+                            <p class="line-break">Tea leaves</p>
+                        </li>
+                        <li>
+                            <h3>Essence</h3>
+                            <p class="essence">Strong and bitter tea flavor</p>
+                        </li>
+                    </ul>
+                </li>
+                <li><div class="counter">2</div>
+                    <h2>Matcha</h2>
+                    <ul class="tea-desc">
+                        <li>
+                            <h3>Origin</h3>
+                            <p class="line-break">China</p>
+                        </li>
+                        <li>
+                            <h3>Form</h3>
+                            <p class="line-break">Powdered tea</p>
+                        </li>
+                        <li>
+                            <h3>Essence</h3>
+                            <p class="essence">Intensely sweet and deep in flavor the higher the grade</p>
+                        </li>
+                    </ul>
+                </li>
+                <li><div class="counter">3</div>
+                    <h2>Jasmine</h2>
+                    <ul class="tea-desc">
+                        <li>
+                            <h3>Origin</h3>
+                            <p class="line-break">China</p>
+                        </li>
+                        <li>
+                            <h3>Form</h3>
+                            <p class="line-break">Tea leaves</p>
+                        </li>
+                        <li>
+                            <h3>Essence</h3>
+                            <p class="essence">Jasmine flowers make it subtly sweet and highly fragrant</p>
+                        </li>
+                    </ul>
+                </li>
+                <li><div class="counter">4</div>
+                    <h2>Genmaicha</h2>
+                    <ul class="tea-desc">
+                        <li>
+                            <h3>Origin</h3>
+                            <p class="line-break">Japan</p>
+                        </li>
+                        <li>
+                            <h3>Form</h3>
+                            <p class="line-break">Tea leaves</p>
+                        </li>
+                        <li>
+                            <h3>Essence</h3>
+                            <p class="essence">Made from popped rice and green tea</p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </main>
+        <footer>
+            <h4>Sources:</h4>
+            <ul>
+                <li><a href="https://blog.piquetea.com/best-green-tea/">Pique Tea</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Sencha"><cite>Wikipedia entry on Sencha green tea</cite></a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Matcha"><cite>Wikipedia entry on Matcha green tea</cite></a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Jasmine_tea/"><cite>Wikipedia entry on Jasmine green tea</cite></a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Genmaicha"><cite>Wikipedia entry on Genmaicha green tea</cite></a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
